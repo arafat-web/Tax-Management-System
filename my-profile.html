@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Add New Member - VSS Co</title>
+    <title>Add Tax - VSS Co</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
@@ -33,7 +33,7 @@
                             <img class="rounded-circle" style="height: 70px; width: 70px;"
                                 src="https://demo.dashboardpack.com/marketing-html/img/client_img.png" alt="">
                         </div>
-                        <a class="nav-link" href="my-profile.html">
+                        <a class="nav-link active" href="my-profile.html">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-user-circle"></i>
                             </div>
@@ -52,8 +52,8 @@
                         </a>
 
                         <!-- MANAGE MEMBER -->
-                        <a class="nav-link active collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#manage-member" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#manage-member"
+                            aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-users"></i></i></div>
                             Manage Member
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -61,8 +61,8 @@
                         <div class="collapse" id="manage-member" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link active" href="add-member.html">Add Member</a>
-                                <a class="nav-link" href="view-member.html">View Member</a>
+                                <a class="nav-link " href="add-member.html">Add Member</a>
+                                <a class="nav-link " href="view-member.html">View Member</a>
                             </nav>
                         </div>
                         <!-- MANAGE MEMBER -->
@@ -112,59 +112,109 @@
             <main>
                 <div class="container-fluid px-4">
 
-                    <h1 class="mt-4 fw-bold">Add Member</h1>
+                    <h1 class="mt-4 fw-bold">Profile</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item">Add Member</li>
+                        <li class="breadcrumb-item">Profile</li>
                     </ol>
+                    <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                        <div class="container" style="max-width: 30rem;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nav-mg d-flex justify-content-center">
+                                        <img class="rounded-circle" style="height: 150px; width: 150px;"
+                                            src="https://demo.dashboardpack.com/marketing-html/img/client_img.png"
+                                            alt="">
+                                    </div>
+                                    <h4 class="text-center mt-2">Arafat Hossain</h4>
+                                    <div class="d-flex align-items-center justify-content-center text-center">
+                                        <span class="btn-sm btn-danger ">Managing Director</span>
+                                    </div>
+                                    <ul class="list-group mt-3">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    Name:
+                                                </div>
+                                                <div class="col-8">
+                                                    Arafat Hossain
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    Password:
+                                                </div>
+                                                <div class="col-8">
+                                                    123456
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    NID:
+                                                </div>
+                                                <div class="col-8">
+                                                    23456789
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    Father's Name:
+                                                </div>
+                                                <div class="col-8">
+                                                   Zahid Hasan
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    Date of Birth:
+                                                </div>
+                                                <div class="col-8">
+                                                   12 May 2000
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-4 text-end">
+                                                    Address:
+                                                </div>
+                                                <div class="col-8">
+                                                    Vutolia, 6510 Katkhoir, Naogaon Rajshahi
+                                                </div>
+                                            </div>
+
+                                        </li>
 
 
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h3>
-                                Add New Member
-                            </h3>
+
+                                      </ul>
+
+                                      <div class="d-flex align-items-center justify-content-center text-center">
+                                        <a href="add-employee.html" class="btn mt-4 btn-success ">Update Profile</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputName" type="text" placeholder="Javed Ali" />
-                                    <label for="inputName">Full Name</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputFName" type="text" placeholder="Karim Ali" />
-                                    <label for="inputFName">Name of Father or Husband</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputNID" type="text" placeholder="123456789" />
-                                    <label for="inputNID">National ID</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputAddress" type="text" placeholder="Raninagar" />
-                                    <label for="inputAddress">Address</label>
-                                </div>
-                                <div class="form-floating mb-3 ">
-                                    <select class="form-select" id="houseType" aria-label="House Type">
-                                        <option selected disabled>Open this select menu</option>
-                                        <option value="1">Mud House</option>
-                                        <option value="2">Semi-Pucca House</option>
-                                        <option value="3">Pucca House</option>
-                                      </select>
-                                      <label for="houseType">House Type</label>
-                                </div>
-                                <div class="form-floating mb-3 ">
-                                    <input class="form-control" id="inputDob" type="date" />
-                                    <label for="inputDob">Date of Birth</label>
-                                </div>
-                                <div class=" mt-4">
-                                    <a class="btn btn-primary" href="index.html">Add Member</a>
-                                </div>
-                            </form>
-                        </div>
-
-
-
-
                     </div>
+
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">

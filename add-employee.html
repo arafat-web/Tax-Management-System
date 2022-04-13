@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Add New Member - VSS Co</title>
+    <title>Add New Employee - VSS Co</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
@@ -52,8 +52,8 @@
                         </a>
 
                         <!-- MANAGE MEMBER -->
-                        <a class="nav-link active collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#manage-member" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#manage-member"
+                            aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-users"></i></i></div>
                             Manage Member
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -61,7 +61,7 @@
                         <div class="collapse" id="manage-member" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link active" href="add-member.html">Add Member</a>
+                                <a class="nav-link" href="add-member.html">Add Member</a>
                                 <a class="nav-link" href="view-member.html">View Member</a>
                             </nav>
                         </div>
@@ -86,8 +86,9 @@
                         <!-- MANAGE TAX -->
 
                         <!-- MANAGE TAX -->
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#manage-company" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link active
+                        active collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#manage-company"
+                            aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-briefcase"></i></div>
                             Manage Company
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -95,7 +96,8 @@
                         <div class="collapse" id="manage-company" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="add-employee.html"> Add Employee</a>
+                                <a class="nav-link active
+                                active" href="add-employee.html"> Add Employee</a>
                                 <a class="nav-link" href="view-employee.html">View Employee</a>
                             </nav>
                         </div>
@@ -112,57 +114,67 @@
             <main>
                 <div class="container-fluid px-4">
 
-                    <h1 class="mt-4 fw-bold">Add Member</h1>
+                    <h1 class="mt-4 fw-bold">Add Employee</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item">Add Member</li>
+                        <li class="breadcrumb-item">Add Employee</li>
                     </ol>
 
 
                     <div class="card mb-4">
                         <div class="card-header">
                             <h3>
-                                Add New Member
+                                Add New Employee
                             </h3>
                         </div>
                         <div class="card-body">
                             <form>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputName" type="text" placeholder="Javed Ali" />
+                                    <input class="form-control" id="inputName" type="text" placeholder="Full Name" />
                                     <label for="inputName">Full Name</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputFName" type="text" placeholder="Karim Ali" />
-                                    <label for="inputFName">Name of Father or Husband</label>
+                                    <input class="form-control" id="inputPSW" type="password" placeholder="Password" />
+                                    <label for="inputPSW">Password</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputNID" type="text" placeholder="123456789" />
+                                    <input class="form-control" id="inputRPSW" type="password" placeholder="Repeat Password" />
+                                    <label for="inputRPSW">Repeat Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputPic" type="file" placeholder="Profile Picture" />
+                                    <label for="inputPic">Profile Picture</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputFName" type="text" placeholder="Name of Password" />
+                                    <label for="inputFName">Name of Father</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputNID" type="text" placeholder="National ID" />
                                     <label for="inputNID">National ID</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="inputAddress" type="text" placeholder="Raninagar" />
+                                    <input class="form-control" id="inputAddress" type="text" placeholder="Address" />
                                     <label for="inputAddress">Address</label>
                                 </div>
                                 <div class="form-floating mb-3 ">
-                                    <select class="form-select" id="houseType" aria-label="House Type">
-                                        <option selected disabled>Open this select menu</option>
-                                        <option value="1">Mud House</option>
-                                        <option value="2">Semi-Pucca House</option>
-                                        <option value="3">Pucca House</option>
-                                      </select>
-                                      <label for="houseType">House Type</label>
+                                    <select class="form-select" id="Designation" aria-label="Designation">
+                                        <option selected disabled>Designation</option>
+                                        <option value="1">Managing Director</option>
+                                        <option value="2">Manager</option>
+                                        <option value="3">Accountant</option>
+                                        <option value="4">Tax Taker</option>
+                                    </select>
+                                    <label for="Designation">Designation</label>
                                 </div>
                                 <div class="form-floating mb-3 ">
-                                    <input class="form-control" id="inputDob" type="date" />
+                                    <input class="form-control" id="inputDob" type="date" placeholder="Date of Birth" />
                                     <label for="inputDob">Date of Birth</label>
                                 </div>
                                 <div class=" mt-4">
-                                    <a class="btn btn-primary" href="index.html">Add Member</a>
+                                    <a class="btn btn-primary" href="index.html">Add Employee</a>
                                 </div>
                             </form>
                         </div>
-
-
-
 
                     </div>
                 </div>
